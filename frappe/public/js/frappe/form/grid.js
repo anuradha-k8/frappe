@@ -79,6 +79,9 @@ export default class Grid {
 								>
 								${__("No Data")}
 							</div>
+							<div class="grid-scroll-bar">
+								<div class="grid-scroll-bar-rows"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -976,7 +979,7 @@ export default class Grid {
 				}
 
 				total_colsize += df.colsize;
-				if (total_colsize > 11) return false;
+				// if (total_colsize > 11) return false;
 				this.visible_columns.push([df, df.colsize]);
 			}
 		}
